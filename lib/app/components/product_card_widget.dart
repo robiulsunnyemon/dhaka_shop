@@ -136,6 +136,7 @@ class ProductCard extends StatelessWidget {
         Get.toNamed(Routes.PRODUCT_DETAILS, arguments: product);
       },
       child: Card(
+        color: Colors.green.withValues(alpha: .1),
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),

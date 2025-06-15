@@ -18,7 +18,7 @@ class HeadingButtonWidget extends StatelessWidget {
           level,
           style: TextStyle(
             fontSize: 18,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w500,
           ),
         ),
         GestureDetector(

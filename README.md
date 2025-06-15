@@ -1,7 +1,7 @@
 # Dhaka Shop - Flutter E-Commerce App
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/dhaka-shop?style=social)](https://github.com/yourusername/dhaka-shop)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/yourusername/dhaka-shop/flutter.yml)](https://github.com/yourusername/dhaka-shop/actions)
+[![GitHub stars](https://img.shields.io/github/stars/robiulsunnyemon/dhaka-shop?style=social)](https://github.com/yourusername/dhaka-shop)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/robiulsunnyemon/dhaka-shop/flutter.yml)](https://github.com/yourusername/dhaka-shop/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A full-featured e-commerce application built with Flutter, optimized for Bangladeshi users.
@@ -11,19 +11,24 @@ A full-featured e-commerce application built with Flutter, optimized for Banglad
 <div align="center">
   <table>
     <tr>
-      <td><img src="assets/screenshots/1_home.jpg" width="200" alt="Home Screen"></td>
-      <td><img src="assets/screenshots/2_product.jpg" width="200" alt="Product Screen"></td>
-      <td><img src="assets/screenshots/3_cart.jpg" width="200" alt="Cart Screen"></td>
+      <td><img src="assets/screenshots/home.jpg" width="200" alt="Home Screen"></td>
+      <td><img src="assets/screenshots/product_details.jpg" width="200" alt="Product Screen"></td>
+      <td><img src="assets/screenshots/cart.jpg" width="200" alt="Cart Screen"></td>
     </tr>
     <tr>
-      <td><img src="assets/screenshots/4_wishlist.jpg" width="200" alt="Wishlist"></td>
-      <td><img src="assets/screenshots/5_checkout.jpg" width="200" alt="Checkout"></td>
-      <td><img src="assets/screenshots/6_orders.jpg" width="200" alt="Orders"></td>
+      <td><img src="assets/screenshots/wishlist.jpg" width="200" alt="Wishlist"></td>
+      <td><img src="assets/screenshots/checkout.jpg" width="200" alt="Checkout"></td>
+      <td><img src="assets/screenshots/order_history.jpg" width="200" alt="Orders"></td>
     </tr>
     <tr>
-      <td><img src="assets/screenshots/7_search.jpg" width="200" alt="Search"></td>
-      <td><img src="assets/screenshots/8_profile.jpg" width="200" alt="Profile"></td>
-      <td><img src="assets/screenshots/9_login.jpg" width="200" alt="Login"></td>
+      <td><img src="assets/screenshots/search.jpg" width="200" alt="Search"></td>
+      <td><img src="assets/screenshots/profile.jpg" width="200" alt="Profile"></td>
+      <td><img src="assets/screenshots/add_review.jpg" width="200" alt="Login"></td>
+    </tr>
+    <tr>
+      <td><img src="assets/screenshots/category.jpg" width="200" alt="Search"></td>
+      <td><img src="assets/screenshots/category_product.jpg" width="200" alt="Profile"></td>
+      <td><img src="assets/screenshots/add_review.jpg" width="200" alt="Login"></td>
     </tr>
   </table>
 </div>
@@ -50,7 +55,7 @@ A full-featured e-commerce application built with Flutter, optimized for Banglad
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/yourusername/dhaka-shop.git
+git clone https://github.com/robiulsunnyemon/dhaka_shop.git
 cd dhaka-shop
 flutter pub get
 flutter run

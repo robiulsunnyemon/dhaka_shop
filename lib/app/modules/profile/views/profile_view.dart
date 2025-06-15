@@ -18,6 +18,7 @@ class ProfileView extends GetView<ProfileController> {
             SliverAppBar(
               title: const Text('Profile'),
               pinned: true,
+              backgroundColor: Colors.transparent,
               actions: [
                 Container(
                   decoration: BoxDecoration(
@@ -31,21 +32,21 @@ class ProfileView extends GetView<ProfileController> {
                 ),
                 SizedBox(width: 8),
               ],
-              expandedHeight: 250,
+              expandedHeight: 200,
               flexibleSpace: FlexibleSpaceBar(
                 background: GestureDetector(
                   onTap: _changeProfilePicture,
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.green.withValues(alpha: 0.1),
+                      color: Colors.green.withValues(alpha: 0.5),
                       borderRadius: const BorderRadius.only(
-                        bottomLeft: Radius.circular(50),
-                        bottomRight: Radius.circular(50),
+                        bottomLeft: Radius.circular(20),
+                        bottomRight: Radius.circular(20),
                       ),
                     ),
                     child: Center(
                       child: CircleAvatar(
-                        radius: 70,
+                        radius: 60,
                         backgroundImage: NetworkImage(
                           controller.avatarUrl.value,
                         ),
@@ -59,7 +60,7 @@ class ProfileView extends GetView<ProfileController> {
                             ),
                             child: const Icon(
                               Icons.camera_alt,
-                              size: 25,
+                              size: 22,
                               color: Colors.white,
                             ),
                           ),
@@ -68,6 +69,7 @@ class ProfileView extends GetView<ProfileController> {
                     ),
                   ),
                 ),
+
                 collapseMode: CollapseMode
                     .pin, // Keeps the rounded corners when collapsing
               ),

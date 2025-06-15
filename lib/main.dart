@@ -23,22 +23,28 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Dhaka Shop',
       theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white,
         primaryColor: Colors.green,
         appBarTheme: AppBarTheme(
-          backgroundColor: Colors.grey.withValues(alpha: .4)
+          backgroundColor: Colors.white70
         ),
         cardTheme: CardThemeData(
+          color: Colors.white
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
             backgroundColor: WidgetStateProperty.all(Colors.green),
             foregroundColor: WidgetStateProperty.all(Colors.white)
           )
+        ),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          backgroundColor: Colors.white,
         )
       ),
       getPages: AppPages.routes,
       initialRoute: Routes.BOTTOM_NAVIGATION_BAR,
       debugShowCheckedModeBanner: false,
+
 
     );
   }

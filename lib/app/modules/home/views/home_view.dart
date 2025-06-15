@@ -31,6 +31,7 @@ class HomeView extends GetView<HomeController> {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
+              border: BoxBorder.all(color: Colors.grey)
             ),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -175,7 +176,7 @@ class HomeView extends GetView<HomeController> {
                         child: SizedBox(
                           width: 120,
                           child: ProductCard(
-                            product: controller.productList[index],
+                            product: controller.flashDeals[index],
                           ),
                         ),
                       );
@@ -184,38 +185,13 @@ class HomeView extends GetView<HomeController> {
                 ),
               ),
 
-              // Mobile Products Section
+              // Discount Poster Section
               SliverToBoxAdapter(
                 child: Padding(
                   padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 10),
-                  child: HeadingButtonWidget(
-                    level: "Best Mobile Brand",
-                    onTap: () => Get.toNamed(
-                      Routes.CATEGORY_PRODUCTS,
-                      arguments: "Mobile",
-                    ),
-                  ),
-                ),
-              ),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 200,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    padding: EdgeInsets.symmetric(horizontal: 8),
-                    itemCount: controller.mobileProducts.length,
-                    itemBuilder: (context, index) {
-                      return Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: SizedBox(
-                          width: 120,
-                          child: ProductCard(
-                            product: controller.mobileProducts[index],
-                          ),
-                        ),
-                      );
-                    },
-                  ),
+                  child: SizedBox(
+                    child: Image.asset("assets/img/discount_banner.jpg"),
+                  )
                 ),
               ),
 
