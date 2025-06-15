@@ -14,6 +14,10 @@ abstract class Routes {
   static const BOTTOM_NAVIGATION_BAR = _Paths.BOTTOM_NAVIGATION_BAR;
   static const WISHLIST = _Paths.WISHLIST;
   static const ORDER_HISTORY = _Paths.ORDER_HISTORY;
+  static const SPLASH = _Paths.SPLASH;
+  static const ONBOARDING = _Paths.ONBOARDING;
+  static const LOGIN = _Paths.LOGIN;
+  static const REGISTRATION = _Paths.REGISTRATION;
 }
 
 abstract class _Paths {
@@ -29,4 +33,8 @@ abstract class _Paths {
   static const BOTTOM_NAVIGATION_BAR = '/bottom-navigation-bar';
   static const WISHLIST = '/wishlist';
   static const ORDER_HISTORY = '/order-history';
+  static const SPLASH = '/splash';
+  static const ONBOARDING = '/onboarding';
+  static const LOGIN = '/login';
+  static const REGISTRATION = '/registration';
 }

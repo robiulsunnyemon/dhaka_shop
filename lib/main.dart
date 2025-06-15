@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
         )
       ),
       getPages: AppPages.routes,
-      initialRoute: Routes.BOTTOM_NAVIGATION_BAR,
+      initialRoute: Routes.SPLASH,
       debugShowCheckedModeBanner: false,
 
 

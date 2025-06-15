@@ -34,7 +34,7 @@ A full-featured e-commerce application built with Flutter, optimized for Banglad
 </div>
 
 ## 🎥 Video Demo
-![Watch Demo Video](assets/video/demo_video.mp4)
+[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/bwxqJI3y98Q?si=k1NZLci5QJXTpSO_)
 
 ## ✨ Features
 
