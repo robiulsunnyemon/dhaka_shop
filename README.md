@@ -33,6 +33,9 @@ A full-featured e-commerce application built with Flutter, optimized for Banglad
   </table>
 </div>
 
+## 🎥 Video Demo
+![Watch Demo Video](assets/video/demo_video.mp4)
+
 ## ✨ Features
 
 - **Product Browsing**: Browse products by categories
@@ -41,7 +44,7 @@ A full-featured e-commerce application built with Flutter, optimized for Banglad
 - **Cart System**: Add products to cart
 - **Order Management**: Track your orders
 - **Profile Management**: Update user profile
-- **Rating System**: 4-star rating implementation
+- **Rating System**: 5-star rating implementation
 
 ## 🛠️ Technologies
 
