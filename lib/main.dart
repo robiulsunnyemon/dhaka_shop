@@ -37,6 +37,24 @@ class MyApp extends StatelessWidget {
             foregroundColor: WidgetStateProperty.all(Colors.white)
           )
         ),
+        textButtonTheme: TextButtonThemeData(
+            style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.all(Colors.white),
+                foregroundColor: WidgetStateProperty.all(Colors.green)
+            )
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(
+                  color: Colors.green
+              ),
+
+            ),
+          labelStyle: TextStyle(
+            color: Colors.black
+          ),
+
+        ),
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
           backgroundColor: Colors.white,
         )

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../routes/app_pages.dart';
@@ -20,17 +21,17 @@ class OnboardingView extends GetView<OnboardingController> {
               _buildPage(
                 'Welcome to Dhaka Shop',
                 'Your one-stop shopping solution',
-                'assets/onboarding1.png',
+                'assets/img/welcome.json',
               ),
               _buildPage(
                 'Easy Shopping',
                 'Browse thousands of products',
-                'assets/onboarding2.png',
+                'assets/img/shopping.json',
               ),
               _buildPage(
                 'Fast Delivery',
                 'Get items delivered to your doorstep',
-                'assets/onboarding3.png',
+                'assets/img/transports.json',
               ),
             ],
           ),
@@ -45,14 +46,16 @@ class OnboardingView extends GetView<OnboardingController> {
                   count: 3,
                   effect: WormEffect(
                     dotColor: Colors.grey,
-                    activeDotColor: Colors.orange,
+                    activeDotColor: Colors.green,
+                    dotWidth: 10,
+                    dotHeight: 10
                   ),
                 ),
                 SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () => Get.offNamed(Routes.LOGIN),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orange,
+                    backgroundColor: Colors.green,
                     padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),
                   ),
                   child: Text('Get Started'),
@@ -71,7 +74,7 @@ class OnboardingView extends GetView<OnboardingController> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(image, height: 250),
+          Lottie.asset( image,height: 250),
           SizedBox(height: 30),
           Text(title, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
           SizedBox(height: 15),

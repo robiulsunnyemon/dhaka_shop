@@ -1,23 +1,35 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 import '../../../routes/app_pages.dart';
+import '../../registration/controllers/registration_controller.dart';
 
 class LoginController extends GetxController {
-
-  var isLoading = false.obs;
+  final RegistrationController registrationController = Get.put(RegistrationController());
 
   Future<void> login(String email, String password) async {
     try {
-      isLoading(true);
-      // Add your authentication logic here (Firebase/API)
-      await Future.delayed(Duration(seconds: 2)); // Mock API call
-      Get.offAllNamed(Routes.HOME);
-    } finally {
-      isLoading(false);
+      final success = await registrationController.login(email, password);
+      if (success) {
+        Get.offAllNamed('/home');
+      } else {
+        throw 'Invalid credentials';
+      }
+    } catch (e) {
+      print(e);
+      Get.snackbar('Error', e.toString());
     }
   }
 
-  void logout() {
-    Get.offAllNamed(Routes.LOGIN);
+
+
+}
+
+
+class AuthMiddleware extends GetMiddleware {
+  @override
+  RouteSettings? redirect(String? route) {
+    final auth = Get.find<RegistrationController>();
+    return auth.isLoggedIn.value ? null : RouteSettings(name: '/login');
   }
 }
