@@ -11,24 +11,24 @@ A full-featured e-commerce application built with Flutter, optimized for Banglad
 <div align="center">
   <table>
     <tr>
-      <td><img src="assets/screenshots/home.jpg" width="400" alt="Home Screen"></td>
-      <td><img src="assets/screenshots/product_details.jpg" width="400" alt="Product Screen"></td>
-      <td><img src="assets/screenshots/cart.jpg" width="400" alt="Cart Screen"></td>
+      <td><img src="assets/screenshots/home.jpg" width="576" alt="Home Screen"></td>
+      <td><img src="assets/screenshots/product_details.jpg" width="576" alt="Product Screen"></td>
+      <td><img src="assets/screenshots/cart.jpg" width="576" alt="Cart Screen"></td>
     </tr>
     <tr>
-      <td><img src="assets/screenshots/wishlist.jpg" width="200" alt="Wishlist"></td>
-      <td><img src="assets/screenshots/checkout.jpg" width="200" alt="Checkout"></td>
-      <td><img src="assets/screenshots/order_history.jpg" width="200" alt="Orders"></td>
+      <td><img src="assets/screenshots/wishlist.jpg" width="576" alt="Wishlist"></td>
+      <td><img src="assets/screenshots/checkout.jpg" width="576" alt="Checkout"></td>
+      <td><img src="assets/screenshots/order_history.jpg" width="576" alt="Orders"></td>
     </tr>
     <tr>
-      <td><img src="assets/screenshots/search.jpg" width="200" alt="Search"></td>
-      <td><img src="assets/screenshots/profile.jpg" width="200" alt="Profile"></td>
-      <td><img src="assets/screenshots/add_review.jpg" width="200" alt="Login"></td>
+      <td><img src="assets/screenshots/search.jpg" width="576" alt="Search"></td>
+      <td><img src="assets/screenshots/profile.jpg" width="576" alt="Profile"></td>
+      <td><img src="assets/screenshots/add_review.jpg" width="576" alt="Login"></td>
     </tr>
     <tr>
-      <td><img src="assets/screenshots/category.jpg" width="200" alt="Search"></td>
-      <td><img src="assets/screenshots/category_product.jpg" width="200" alt="Profile"></td>
-      <td><img src="assets/screenshots/add_review.jpg" width="200" alt="Login"></td>
+      <td><img src="assets/screenshots/category.jpg" width="576" alt="Search"></td>
+      <td><img src="assets/screenshots/category_product.jpg" width="576" alt="Profile"></td>
+      <td><img src="assets/screenshots/add_review.jpg" width="576" alt="Login"></td>
     </tr>
   </table>
 </div>
