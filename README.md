@@ -11,9 +11,9 @@ A full-featured e-commerce application built with Flutter, optimized for Banglad
 <div align="center">
   <table>
     <tr>
-      <td><img src="assets/screenshots/home.jpg" width="200" alt="Home Screen"></td>
-      <td><img src="assets/screenshots/product_details.jpg" width="200" alt="Product Screen"></td>
-      <td><img src="assets/screenshots/cart.jpg" width="200" alt="Cart Screen"></td>
+      <td><img src="assets/screenshots/home.jpg" width="400" alt="Home Screen"></td>
+      <td><img src="assets/screenshots/product_details.jpg" width="400" alt="Product Screen"></td>
+      <td><img src="assets/screenshots/cart.jpg" width="400" alt="Cart Screen"></td>
     </tr>
     <tr>
       <td><img src="assets/screenshots/wishlist.jpg" width="200" alt="Wishlist"></td>
