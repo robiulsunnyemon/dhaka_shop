@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 import 'app/modules/cart/controllers/cart_controller.dart';
 import 'app/modules/order_history/controllers/order_history_controller.dart';
+import 'app/modules/registration/controllers/registration_controller.dart';
 import 'app/modules/wishlist/controllers/wishlist_controller.dart';
 
 void main() {
@@ -11,6 +12,7 @@ void main() {
   Get.put(CartController());
   Get.put(WishlistController());
   Get.put(OrderHistoryController());
+  Get.put(RegistrationController());
   runApp(const MyApp());
 }
 
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         primaryColor: Colors.green,
         appBarTheme: AppBarTheme(
-          backgroundColor: Colors.white70
+          backgroundColor: Colors.white
         ),
         cardTheme: CardThemeData(
           color: Colors.white

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../routes/app_pages.dart';
 import '../../registration/controllers/registration_controller.dart';
@@ -9,8 +11,8 @@ import '../controllers/login_controller.dart';
 class LoginView extends GetView<LoginController> {
    LoginView({super.key});
    final _registrationsController=Get.put(RegistrationController());
-   final _emailController = TextEditingController();
-   final _passwordController = TextEditingController();
+   final _emailController = TextEditingController(text: "robiul@e.com");
+   final _passwordController = TextEditingController(text: "12345678");
    final _formKey = GlobalKey<FormState>();
 
    @override
@@ -76,10 +78,34 @@ class LoginView extends GetView<LoginController> {
 
    void _login() async {
      if (_formKey.currentState!.validate()) {
-       final success = await controller.login(
-         _emailController.text.trim(),
-         _passwordController.text.trim(),
-       );
+
+       try {
+         final success = await _registrationsController.login(
+           _emailController.text.trim(),
+           _passwordController.text.trim(),
+
+         );
+         if (success) {
+           try {
+             final SharedPreferences prefs = await SharedPreferences.getInstance();
+             await prefs.setString('email', _emailController.text.trim());
+             final String? email = prefs.getString('email');
+             print("Saved email: $email");
+           } on PlatformException catch (e) {
+             print("PlatformException: ${e.message}");
+             Get.snackbar('Error', 'Failed to save preferences. Restart the app.');
+           } catch (e) {
+             print("General Error: $e");
+           }
+           Get.offAllNamed(Routes.BOTTOM_NAVIGATION_BAR);
+         } else {
+           throw 'Invalid credentials';
+         }
+       } catch (e) {
+         print("error");
+         print(e);
+         Get.snackbar('Error', e.toString());
+       }
        }
      }
    }

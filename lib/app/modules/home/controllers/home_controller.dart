@@ -12,7 +12,6 @@ class HomeController extends GetxController {
   @override
   void onInit() {
     fetchProducts();
-    fetchFeaturedProducts();
     super.onInit();
   }
 
@@ -26,15 +25,7 @@ class HomeController extends GetxController {
     }
   }
 
-  void fetchFeaturedProducts() async {
-    try {
-      isLoading(true);
-      var products = await ProductService().fetchFeaturedProducts();
-      featuredProductList.assignAll(products);
-    } finally {
-      isLoading(false);
-    }
-  }
+
 
   List<Product> get mobileProducts =>
       productList.where((product) => product.category == 'Mobile').toList();

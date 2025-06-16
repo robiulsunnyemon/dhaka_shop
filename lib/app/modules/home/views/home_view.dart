@@ -136,12 +136,12 @@ class HomeView extends GetView<HomeController> {
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.green.withValues(alpha: .5),
+                            color: Colors.green.withValues(alpha: .8),
                             borderRadius: BorderRadius.circular(5)
                           ),
                             child: Padding(
                               padding: const EdgeInsets.all(5),
-                              child: Text(categories[index],style: TextStyle(color: Colors.black  ),),
+                              child: Text(categories[index],style: TextStyle(color: Colors.white  ),),
                             )
                         ),
                       );

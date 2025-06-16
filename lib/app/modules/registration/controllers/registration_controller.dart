@@ -16,8 +16,6 @@ class RegistrationController extends GetxController {
   @override
   void onInit() async {
     super.onInit();
-    _prefs = await SharedPreferences.getInstance();
-    await _loadUser();
 
     // Add demo user if not exists
     if (users.isEmpty) {
@@ -53,8 +51,7 @@ class RegistrationController extends GetxController {
         phone: phone,
       );
 
-      users.add(newUser);
-      await _saveUser(newUser);
+      users.add(newUser);;
       isLoggedIn.value = true;
 
       return true;
@@ -77,7 +74,6 @@ class RegistrationController extends GetxController {
       );
 
       if (user.id.isNotEmpty) {
-        await _saveUser(user);
         isLoggedIn.value = true;
         return true;
       }
@@ -91,26 +87,9 @@ class RegistrationController extends GetxController {
 
   // User Logout
   Future<void> logout() async {
-    await _clearUser();
     isLoggedIn.value = false;
     currentUser.value = null;
   }
 
-  // Helper Methods
-  Future<void> _loadUser() async {
-    final userData = _prefs.getString('current_user');
-    if (userData != null) {
-      currentUser.value = User.fromJson(userData);
-      isLoggedIn.value = true;
-    }
-  }
 
-  Future<void> _saveUser(User user) async {
-    currentUser.value = user;
-    await _prefs.setString('current_user', user.toJson());
-  }
-
-  Future<void> _clearUser() async {
-    await _prefs.remove('current_user');
-  }
 }
